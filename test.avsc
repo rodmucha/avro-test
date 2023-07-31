@@ -1,0 +1,74 @@
+{
+    "type": "record",
+    "name": "TestObject",
+    "namespace": "ca.dataedu",
+    "fields": [{
+        "name": "metrics",
+        "type": ["null", {
+            "type": "record",
+            "name": "Metrics",
+            "fields": [{
+                "name": "data",
+                "type": ["null", {
+                    "type": "record",
+                    "name": "Data",
+                    "fields": [{
+                        "name": "identityId",
+                        "type": ["null", "string"],
+                        "default": null
+                    }, {
+                        "name": "lastAuthor",
+                        "type": ["null", "string"],
+                        "default": null
+                    }, {
+                        "name": "processType",
+                        "type": ["null", "string"],
+                        "default": null
+                    }, {
+                        "name": "qualification",
+                        "type": ["null", "string"],
+                        "default": null
+                    }, {
+                        "name": "state",
+                        "type": ["null", "string"],
+                        "default": null
+                    }, {
+                        "name": "tenantId",
+                        "type": ["null", "string"],
+                        "default": null
+                    }]
+                }],
+                "default": null
+            }, {
+                "name": "date",
+                "type": ["null", "long"],
+                "default": null
+            }, {
+                "name": "envId",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "envType",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "eventId",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "eventName",
+                "type": ["null", "string"],
+                "default": null
+            }, {
+                "name": "source",
+                "type": ["null", "string"],
+                "default": null
+            }]
+        }],
+        "default": null
+    }, {
+        "name": "v1",
+        "type": ["null", "boolean"],
+        "default": null
+    }]
+}
