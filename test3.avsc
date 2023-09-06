@@ -1,106 +1,122 @@
 {
     "type": "record",
-    "name": "JourneyQualification",
-    "namespace": "loqr.journeys",
+    "name": "topLevelRecord",
     "fields": [
         {
             "name": "metrics",
             "type": [
                 {
                     "type": "record",
-                    "name": "Metrics",
+                    "name": "metrics",
+                    "namespace": "topLevelRecord",
                     "fields": [
                         {
                             "name": "data",
                             "type": [
                                 {
                                     "type": "record",
-                                    "name": "Data",
+                                    "name": "data",
+                                    "namespace": "topLevelRecord.metrics",
                                     "fields": [
                                         {
                                             "name": "identityId",
                                             "type": [
-                                                "string"
+                                                "string",
+                                                "null"
                                             ]
                                         },
                                         {
                                             "name": "lastAuthor",
                                             "type": [
-                                                "string"
+                                                "string",
+                                                "null"
                                             ]
                                         },
                                         {
                                             "name": "processType",
                                             "type": [
-                                                "string"
+                                                "string",
+                                                "null"
                                             ]
                                         },
                                         {
                                             "name": "qualification",
                                             "type": [
-                                                "string"
+                                                "string",
+                                                "null"
                                             ]
                                         },
                                         {
                                             "name": "state",
                                             "type": [
-                                                "string"
+                                                "string",
+                                                "null"
                                             ]
                                         },
                                         {
                                             "name": "tenantId",
                                             "type": [
-                                                "string"
+                                                "string",
+                                                "null"
                                             ]
                                         }
                                     ]
-                                }
-                            ],
+                                },
+                                "null"
+                            ]
                         },
                         {
                             "name": "date",
                             "type": [
-                                "long"
+                                "long",
+                                "null"
                             ]
                         },
                         {
                             "name": "envId",
                             "type": [
-                                "string"
+                                "string",
+                                "null"
                             ]
                         },
                         {
                             "name": "envType",
                             "type": [
-                                "string"
+                                "string",
+                                "null"
                             ]
                         },
                         {
                             "name": "eventId",
                             "type": [
-                                "string"
+                                "string",
+                                "null"
                             ]
                         },
                         {
                             "name": "eventName",
                             "type": [
-                                "string"
+                                "string",
+                                "null"
                             ]
                         },
                         {
                             "name": "source",
                             "type": [
-                                "string"
+                                "string",
+                                "null"
                             ]
                         }
                     ]
-                }
+                },
+                "null"
             ]
         },
         {
             "name": "v1",
             "type": [
-                "boolean"
+                "boolean",
+                "null"
             ]
         }
     ]
